@@ -16,7 +16,9 @@ import route_core as rc
 import ors
 from estilos_ui import aplicar_estilos
 
-st.set_page_config(page_title="Planificador de reparto", layout="wide")
+st.set_page_config(page_title="NanRoute",
+                   page_icon="favicon.png" if os.path.exists("favicon.png") else "🚚",
+                   layout="wide")
 aplicar_estilos()
 st.markdown('<div class="credito">by: Hernando Mejía Gómez</div>', unsafe_allow_html=True)
 CACHE = "geocode_cache.csv"
